@@ -7,7 +7,7 @@ Gather.js
 
 ```html
 
-<script type="text/javascript" src="bin/gather.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/AdamByrne/Gather.js/master/bin/gather.js"></script>
 
 ```
 
