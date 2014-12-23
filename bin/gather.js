@@ -20,9 +20,9 @@ gather.import = function(name, type, async) {
             e.rel = "stylesheet";
             e.type = 'text/css';
             e.href = name + ".css";
-            e.async = async;
             document.head.appendChild(e);
             files.push(e);
+            console.log("Async does not apply to css files, :(");
             break;
 
         case "JS":
