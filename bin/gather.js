@@ -10,7 +10,7 @@
 var gather = {};
 var files = [];
 
-gather.import = function(name, type) {
+gather.import = function(name, type, async) {
     /* SWITCH between elements  */
     var _type = type.toUpperCase();
     switch (_type) {
@@ -20,6 +20,7 @@ gather.import = function(name, type) {
             e.rel = "stylesheet";
             e.type = 'text/css';
             e.href = name + ".css";
+            e.async = async;
             document.head.appendChild(e);
             files.push(e);
             break;
@@ -28,6 +29,7 @@ gather.import = function(name, type) {
             var el = document.createElement('script');
             el.type = 'text/javascript';
             el.src = name + ".js";
+            el.async = async;
             document.body.appendChild(el);
             files.push(el);
             break;
