@@ -16,7 +16,7 @@ Gather.js
 ```javascript
 
 gather.import("js_file","js"); // includes a javascript file in the body tag
-gather.import("css_file", "css"); // includes a css file in head body tag
+gather.import("css_file", "css"); // includes a css file in head tag
 gather.gather(); // logs each gather.import(html element) to the console (for debugging)
 
 ```
